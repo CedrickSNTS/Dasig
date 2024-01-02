@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasig Job Solutions</title>
+    <link rel="stylesheet" href="prefstyle2.css">
+    <link rel="icon" href="dasiglogo.png"  type="image/png">
+    <script src="https://kit.fontawesome.com/168993267d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class= card>
+        <div class="title">What job positions do you have in the past?</div>
+            <div class="content">
+
+                <div class="input-group">
+
+                    <!-- Job positions -->
+                    <div class="input-field" id="jobFields">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <input type="text" placeholder="Enter job positions (Ex.Programmer, Data Scientist) Separate entries with a comma.">
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="title">What are the skills that you have?</div> 
+                        <div class="input-field" id="skillsField">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <input type="text" placeholder="What are your skills? (Ex.Teamwork, Creativity) Separate entries with a comma." >
+                        </div>
+
+                        <!-- Job Location -->
+                    <div class="title">Preferred job location</div> 
+                        <div class="input-field" id="regionField">
+
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input type="text" placeholder="Enter region (Ex. NCR, CALABARZON, Central Luzon)">                         
+                        </div>
+
+                    <div class="input-field" id="cityField">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Enter city (Ex. Quezon City, Cebu City, Davao City)">
+                    </div>
+                </div>
+
+                <div class="btn-field">
+                    <button type="button" onclick="func()" id="prevBtn">Previous</button>
+                    <button type="button" onclick="func()" id="nextBtn">Next</button>
+                </div>
+
+            </div>
+    </div>
+
+    <script>
+        let nextBtn = document.getElementById("nextBtn");   
+        let prevBtn = document.getElementById("prevBtn");
+        
+        nextBtn.onclick = function(){
+            window.location.assign("explore.html")
+        }
+
+        prevBtn.onclick = function(){
+            window.location.assign("preference1.html")
+        }
+
+    </script>
+
+</body>
+
+</html>

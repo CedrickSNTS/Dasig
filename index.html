@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasig Job Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="dasiglogo.png"  type="image/png">
+    <script src="https://kit.fontawesome.com/168993267d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign up</h1>
+            <form>
+                <div class="input-group">
+                    <!-- User name -->
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <!-- User email -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="username">
+                    </div>
+                    <!-- User password -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <!-- forgot password -->
+                    <p> Forgot password? <a href="#">Click Here!</a></p>
+
+                    <!-- Submit button -->
+                    <div class="btn-submit">
+                        <button type="button" onclick="func()" id="submitBtn">Submit</button>    
+                        
+                    </div>
+
+                    </div>
+                    <!-- Sign in/Sign up button -->
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn">Sign Up</button>   
+                        <button type="button" id="signinBtn" class="disable">Sign in</button>
+                    </div>
+
+                    
+
+            </form> 
+        </div>
+    </div>
+
+<script>
+
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let submitBtn = document.getElementById("submitBtn");
+    let title = document.getElementById("title");
+
+    signinBtn.onclick = function(){
+        nameField.style.maxHeight = "0";
+        title.innerHTML = "Sign In";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+        submitBtn.innerHTML = "Log In";
+    }
+
+    signupBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Sign Up";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+        submitBtn.innerHTML = "Submit";
+    }
+
+    function func(){
+        var email = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        if (email == 'admin' && pass == '123'){
+            alert("Login Successfull")
+            window.location.assign("preference1.html")
+        }
+        else{
+            alert("Invalid email or password")
+        }
+    }
+
+</script>
+
+</body>
+</html>

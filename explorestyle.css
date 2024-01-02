@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #008080;
+}
+
+.card {
+    width: 23%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    max-width: 450px;
+    position:fixed;
+    top: 50%;
+    left: 5%; 
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+    
+}
+
+.logo {
+    max-width: 200px; 
+    margin-top: 10px;
+}
+
+.bg {
+    max-width: 980px;
+    margin-bottom: 20px; 
+    margin-left: 205%; 
+    transform: translateX(-50%); 
+    position: absolute;
+    top: 0px; 
+}
+
+.user {
+    max-width: 60px;
+    margin-top: -100px;
+    margin-left: -80%;
+    background: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.user:hover {
+    transform: scale(1.2); 
+}
+
+label {
+    margin-left: 5%; 
+    margin-top: 100px;
+    display: inline-block;
+    font-size: 25px; 
+}
+
+.btn-explore{
+    width: 317.5%;
+    margin-top: 20%;
+    margin-left: -26%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-explore button{
+    flex-basis: 48%;
+    background: #008080;
+    color: #555;
+    height: 60px;
+    width: 100%;
+    border: 0; 
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    text-align: center;
+    font-size: 23px; 
+    
+}
+
+.btn-jobs{
+    width: 317.5%;
+    margin-top: 20%;
+    margin-left: -26%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-jobs button{
+    flex-basis: 48%;
+    background: #eaeaea;
+    color: #555;
+    height: 60px;
+    width: 100%;
+    border: 0; 
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    text-align: center;
+    font-size: 23px; /* Set your desired font size */
+    
+}
+
+
+.btn-settings{
+    width: 317.5%;
+    margin-top: 20%;
+    margin-left: -26%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-jobs button,
+.btn-settings button{
+    flex-basis: 48%;
+    background: #eaeaea;
+    color: #555;
+    height: 60px;
+    width: 100%;
+    border: 0; 
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    text-align: center;
+    font-size: 23px;
+}
+
+.btn-jobs button:hover,
+.btn-settings button:hover {
+    background: #008080;
+    color: #fff; 
+}
